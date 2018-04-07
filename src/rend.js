@@ -1,6 +1,6 @@
 const bufferJson = require('buffer-json')
 const Duplex = require('stream').Duplex
-const ipcRenderer = require('electron').ipcRenderer
+const ipcRenderer = chrome.ipcRenderer
 const util = require('util')
 
 function RendIPCStream (channel, streamOpts) {
